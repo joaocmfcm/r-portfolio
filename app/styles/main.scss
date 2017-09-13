@@ -24,25 +24,34 @@ section{
   position: relative;
 }
 
+/* Text */
 h1, h2, h3, h4{
   margin-top: 0px;
   margin-bottom: 10px;
 }
 
+.thin-text{
+  font-weight: 100;
+}
+
+/* Masterhead */
+$adjust-lettering: 2px;
 .masterhead{
-  background-image: url(https://i.imgur.com/edDgEGj.jpg);
-  background: -moz-linear-gradient(top, rgba(242,244,255,1) 0%, rgba(247,254,255,1) 100%);
+  background: url(https://scontent.flis6-1.fna.fbcdn.net/v/t31.0-8/339278_2597730904687_498928934_o.jpg?oh=c9d476651c36a7706a37ca890863aa0e&oe=5A5388D3);
+  background-size: cover;
+  /* background: -moz-linear-gradient(top, rgba(242,244,255,1) 0%, rgba(247,254,255,1) 100%);
   background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(242,244,255,1)), color-stop(100%, rgba(247,254,255,1)));
-  background: -webkit-linear-gradient(top, rgba(242,244,255,1) 0%, rgba(247,254,255,1) 100%);
+  background: -webkit-linear-gradient(top, rgba(242,244,255,1) 0%, rgba(247,254,255,1) 100%); */
+  background-color: white;
   height: 100vh;
-  
   h4{
     text-transform: uppercase;
     font-weight: 500;
-    font-size: $font-size-base*1.5;
+    font-size: $font-size-base*1.2;
     text-decoration: underline;
-    margin-bottom: 20px;
+    margin-bottom: $default-margin;
     letter-spacing: 1px;
+    padding-left: $adjust-lettering;
   }
 
   h2{
@@ -75,10 +84,65 @@ h1, h2, h3, h4{
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 5px;
+    padding-left: $adjust-lettering;
   }
 
 }
 
-.thin-text{
-  font-weight: 100;
+/* Navbar */
+.nav-text{
+  font-family: $font-family-hand;
+  color: $black !important;
+  font-weight: bold;
+  font-size: $font-size-xxl;
+  .anchor{
+    color: $black !important;
+  }
 }
+
+.navbar{
+  background-color: white;
+  opacity: 0.9;
+}
+
+/* Sections */
+section{
+  h1{
+    text-align: center;
+    font-size: $font-size-l;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    &.sub{
+      font-family: $font-family-hand;
+      color: $accent-color;
+      font-size: $font-size-xl;
+      text-transform: none;
+      font-weight: 600;
+    }
+  }
+  hr{
+    border-color: $gray-lighter;
+  }
+  
+  p{
+    font-family: $font-family-text;
+    font-size: $font-size-m;
+    font-weight: 100;
+    &.journal-text{
+      border-left: 3px solid $accent-color;
+      padding-left: $default-margin;
+      margin-bottom: $default-margin;
+    }
+  }
+
+}
+
+
+
+
+
+
+
+
+
+

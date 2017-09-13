@@ -1,15 +1,32 @@
 @import url('https://fonts.googleapis.com/css?family=Hind:300,400,500,600,700|Montserrat:100,200,300,400,500,600,700,800,900');
+@import url('https://fonts.googleapis.com/css?family=Sacramento');
+@import url('https://fonts.googleapis.com/css?family=Reenie+Beanie');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700');
 /* fonts */
 $font-family: 'Hind', sans-serif;
-$font-family-hand: 'Hind', cursive;
+/* $font-family-hand: 'Sacramento', cursive; */
+$font-family-hand: 'Reenie Beanie', cursive;
+$font-family-text:  'Roboto Slab', serif;
 /* $font-family: 'Playfair Display', serif; */
 $font-size-base: 12px;
+$font-size-m: 14px;
+$font-size-l: 16px;
+$font-size-xl: 20px;
+$font-size-xxl: 24px;
+$font-size-xxxl: 32px;
 $font-size-gigantic: 72px;
 
 /* color palette */
-$black: rgb(55,57,59);
+$black: rgb(45,45,45);
+$white: rgb(245,244,245);
 $red: rgb(230, 25, 97);
-$pink: rgb(237,131,177);
-$green: rgb(34,208,141);
+$pink: rgb(207,169,174);
+$light-pink: rgb(236,212,211);
+$brownish: rgb(159,153,143);
+$grey: rgb(228,225,219);
 
-$accent-color: $red;
+$accent-color: $pink;
+
+
+/* Margins */
+$default-margin: 20px;
