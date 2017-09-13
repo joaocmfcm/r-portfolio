@@ -99,10 +99,13 @@ $adjust-lettering: 2px;
     color: $black !important;
   }
 }
-
 .navbar{
-  background-color: white;
-  opacity: 0.9;
+  background-color: transparent;
+  border: none;
+}
+
+.navbar-scrolled{
+  background-color: rgba($white, 0.5);
 }
 
 /* Sections */
