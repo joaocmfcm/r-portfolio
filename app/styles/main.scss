@@ -1,8 +1,8 @@
 $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
 // bower:scss
-@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+@import 'bootstrap-sass-official/assets/stylesheets/_bootstrap.scss';
 // endbower
-@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,200i,400,500,600,800,900|Playfair+Display:400,700,900');
+
 @import 'vars.scss';
 
 body{
@@ -16,8 +16,6 @@ section{
   width: 100%;
   min-height: 400px;
   background-color: #fffffc;
-  padding-left: 25%;
-  padding-right: 25%;
   padding-top: 100px;
   padding-bottom: 100px;
 }
@@ -37,24 +35,46 @@ h1, h2, h3, h4{
   background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(242,244,255,1)), color-stop(100%, rgba(247,254,255,1)));
   background: -webkit-linear-gradient(top, rgba(242,244,255,1) 0%, rgba(247,254,255,1) 100%);
   height: 100vh;
-
-  h1{
-    font-size: $font-size-gigantic;
-    font-weight: 100;
+  
+  h4{
     text-transform: uppercase;
+    font-weight: 500;
+    font-size: $font-size-base*1.5;
+    text-decoration: underline;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
   }
 
   h2{
-    font-weight: 500;
-    font-size: $font-size-gigantic*0.70;
+    font-weight: 800;
+    font-size: $font-size-gigantic;
+    font-family: $font-family;
     text-transform: uppercase;
-    color: $red;
+    color: $accent-color;
+    margin-bottom: 0px;
+    &.sub{
+      text-transform: uppercase;
+      font-family: $font-family;
+      color: $black;
+      font-weight: 300;
+      font-size: $font-size-gigantic*0.75;
+      margin-bottom: 0px;
+    }
+  }
+  @media only screen and (max-width : 768px) {
+    h2{
+      font-size: $font-size-gigantic*0.5;
+      &.sub{
+        font-size: $font-size-gigantic*0.40;
+      }
+    }
   }
 
   h3{
     font-size: $font-size-base;
-    font-weight: bold;
+    font-weight: 500;
     text-transform: uppercase;
+    letter-spacing: 5px;
   }
 
 }

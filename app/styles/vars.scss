@@ -1,9 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Hind:300,400,500,600,700|Montserrat:100,200,300,400,500,600,700,800,900');
 /* fonts */
-$font-family: 'Montserrat', sans-serif;
+$font-family: 'Hind', sans-serif;
+$font-family-hand: 'Hind', cursive;
 /* $font-family: 'Playfair Display', serif; */
 $font-size-base: 12px;
-$font-size-gigantic: 100px;
+$font-size-gigantic: 72px;
 
 /* color palette */
-$black: #3c3c3c;
-$red: rgb(213,0,50);
+$black: rgb(55,57,59);
+$red: rgb(230, 25, 97);
+$pink: rgb(237,131,177);
+$green: rgb(34,208,141);
+
+$accent-color: $red;
