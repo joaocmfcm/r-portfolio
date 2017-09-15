@@ -1,0 +1,51 @@
+/* Sections */
+section{
+  width: 100%;
+  min-height: 400px;
+  background-color: #fffffc;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+section{
+  h1{
+    text-align: center;
+    font-size: $font-size-xxl;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    &.sub{
+      font-family: $font-family-hand;
+      color: $accent-color;
+      font-size: $font-size-xl;
+      text-transform: none;
+      font-weight: 600;
+    }
+  }
+  hr{
+    border-color: $gray-lighter;
+    margin-bottom: 2*$default-margin;
+  }
+  
+  p{
+    font-family: $font-family-text;
+    font-size: $font-size-m;
+    font-weight: 100;
+    &.journal-text{
+      border-left: 3px solid $accent-color;
+      padding-left: $default-margin;
+      margin-bottom: $default-margin*2;
+    }
+  }
+}
+
+section{
+  &.invert{
+    background-color: lighten($light-pink, 20%);
+    h1{
+      color: $accent-color;
+      &.sub{
+        color: $black;
+      }
+    }
+  }
+}

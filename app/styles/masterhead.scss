@@ -1,0 +1,52 @@
+/* Masterhead */
+$adjust-lettering: 2px;
+$masterhead-color: $black;
+.masterhead{
+  background: url(https://scontent.flis6-1.fna.fbcdn.net/v/t31.0-8/339278_2597730904687_498928934_o.jpg?oh=c9d476651c36a7706a37ca890863aa0e&oe=5A5388D3);
+  background: url(https://scontent.flis6-1.fna.fbcdn.net/v/t31.0-8/17637136_10208516060161147_968345507419324820_o.jpg?oh=c97988bd75ae36e7cb8ef113bb8118e1&oe=5A514EEF);
+  
+  background-size: cover;
+  /* background: -moz-linear-gradient(top, rgba(242,244,255,1) 0%, rgba(247,254,255,1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(242,244,255,1)), color-stop(100%, rgba(247,254,255,1)));
+  background: -webkit-linear-gradient(top, rgba(242,244,255,1) 0%, rgba(247,254,255,1) 100%); */
+  background-color: white;
+  height: 100vh;
+
+  h4{
+    color: $masterhead-color;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: $font-size-m;
+    text-decoration: underline;
+    margin-bottom: $default-margin;
+    letter-spacing: 1px;
+    padding-left: $adjust-lettering;
+  }
+
+  h2{
+    font-weight: 900;
+    font-size: $font-size-gigantic;
+    font-family: $font-family;
+    text-transform: uppercase;
+    color: $accent-color;
+    margin-bottom: 0px;
+    letter-spacing: 0px;
+    &.sub{
+      text-transform: uppercase;
+      font-family: $font-family;
+      color: $masterhead-color;
+      font-weight: 300;
+      font-size: $font-size-gigantic*0.75;
+      margin-bottom: 0px;
+    }
+  }
+
+  h3{
+    color: $masterhead-color;
+    font-size: $font-size-base;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    padding-left: $adjust-lettering;
+  }
+}

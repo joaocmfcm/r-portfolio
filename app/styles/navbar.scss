@@ -1,0 +1,18 @@
+/* Navbar */
+.nav-text{
+  font-family: $font-family-hand;
+  color: $black !important;
+  font-weight: bold;
+  font-size: $font-size-xxl;
+  .anchor{
+    color: $black !important;
+  }
+}
+.navbar{
+  background-color: transparent;
+  border: none;
+}
+
+.navbar-scrolled{
+  background-color: rgba($white, 0.5);
+}
