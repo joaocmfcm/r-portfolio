@@ -40,7 +40,7 @@ section{
 
 section{
   &.invert{
-    background-color: lighten($light-pink, 20%);
+    background-color: $light-pink;
     h1{
       color: $accent-color;
       &.sub{
